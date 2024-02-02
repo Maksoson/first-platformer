@@ -1,0 +1,114 @@
+[gd_scene load_steps=10 format=3 uid="uid://blk47r12jr10o"]
+
+[ext_resource type="Texture2D" uid="uid://batfkn27tpbb7" path="res://assets/environment/background/back.png" id="1_b4l62"]
+[ext_resource type="Script" path="res://BG/BG.gd" id="1_hn0e8"]
+[ext_resource type="Texture2D" uid="uid://3h6ibbyvnmen" path="res://assets/environment/props/house.png" id="3_rwtsw"]
+[ext_resource type="Texture2D" uid="uid://cs4ec5ftep8u4" path="res://assets/environment/background/middle.png" id="3_uhscj"]
+[ext_resource type="Texture2D" uid="uid://cm4esi07gogbi" path="res://assets/environment/props/pine.png" id="4_tnt8s"]
+[ext_resource type="Texture2D" uid="uid://bkonq2m4qr1l" path="res://assets/environment/props/tree-house.png" id="5_p5sx2"]
+[ext_resource type="Texture2D" uid="uid://l80dssdouihd" path="res://assets/environment/props/plant-house.png" id="6_kuqjk"]
+[ext_resource type="Texture2D" uid="uid://br4xqmrtmdjq6" path="res://assets/environment/props/straw-house.png" id="7_kj18f"]
+[ext_resource type="Texture2D" uid="uid://dbb8a0wsyson2" path="res://assets/environment/props/tree.png" id="8_c8cmx"]
+
+[node name="BG" type="ParallaxBackground"]
+script = ExtResource("1_hn0e8")
+
+[node name="Sky\'n\'Ocean" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Back" type="Sprite2D" parent="Sky\'n\'Ocean"]
+position = Vector2(577, 322.5)
+scale = Vector2(3, 2.69583)
+texture = ExtResource("1_b4l62")
+metadata/_edit_lock_ = true
+
+[node name="Houses and trees" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.5, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="House" type="Sprite2D" parent="Houses and trees"]
+position = Vector2(40, 353)
+texture = ExtResource("3_rwtsw")
+
+[node name="Pine" type="Sprite2D" parent="Houses and trees"]
+position = Vector2(121, 334)
+texture = ExtResource("4_tnt8s")
+
+[node name="Tree-house" type="Sprite2D" parent="Houses and trees"]
+position = Vector2(580, 308)
+texture = ExtResource("5_p5sx2")
+
+[node name="Plant-house" type="Sprite2D" parent="Houses and trees"]
+position = Vector2(385, 333)
+texture = ExtResource("6_kuqjk")
+
+[node name="Plant-house2" type="Sprite2D" parent="Houses and trees"]
+position = Vector2(854, 325)
+texture = ExtResource("6_kuqjk")
+
+[node name="Straw-house" type="Sprite2D" parent="Houses and trees"]
+position = Vector2(217, 344)
+texture = ExtResource("7_kj18f")
+
+[node name="Tree" type="Sprite2D" parent="Houses and trees"]
+position = Vector2(1060, 336)
+texture = ExtResource("8_c8cmx")
+
+[node name="Tree2" type="Sprite2D" parent="Houses and trees"]
+position = Vector2(497, 340)
+texture = ExtResource("8_c8cmx")
+
+[node name="Pine2" type="Sprite2D" parent="Houses and trees"]
+position = Vector2(666, 341)
+texture = ExtResource("4_tnt8s")
+
+[node name="Pine3" type="Sprite2D" parent="Houses and trees"]
+position = Vector2(711, 335)
+texture = ExtResource("4_tnt8s")
+
+[node name="Pine4" type="Sprite2D" parent="Houses and trees"]
+position = Vector2(690, 357)
+texture = ExtResource("4_tnt8s")
+
+[node name="Pine5" type="Sprite2D" parent="Houses and trees"]
+position = Vector2(743, 339)
+texture = ExtResource("4_tnt8s")
+
+[node name="Mountains" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.7, 1)
+motion_mirroring = Vector2(1230, 0)
+
+[node name="Middle" type="Sprite2D" parent="Mountains"]
+position = Vector2(88, 462)
+texture = ExtResource("3_uhscj")
+metadata/_edit_lock_ = true
+
+[node name="Middle2" type="Sprite2D" parent="Mountains"]
+position = Vector2(264, 462)
+texture = ExtResource("3_uhscj")
+metadata/_edit_lock_ = true
+
+[node name="Middle3" type="Sprite2D" parent="Mountains"]
+position = Vector2(440, 462)
+texture = ExtResource("3_uhscj")
+metadata/_edit_lock_ = true
+
+[node name="Middle4" type="Sprite2D" parent="Mountains"]
+position = Vector2(616, 462)
+texture = ExtResource("3_uhscj")
+metadata/_edit_lock_ = true
+
+[node name="Middle5" type="Sprite2D" parent="Mountains"]
+position = Vector2(792, 462)
+texture = ExtResource("3_uhscj")
+metadata/_edit_lock_ = true
+
+[node name="Middle6" type="Sprite2D" parent="Mountains"]
+position = Vector2(968, 462)
+texture = ExtResource("3_uhscj")
+metadata/_edit_lock_ = true
+
+[node name="Middle7" type="Sprite2D" parent="Mountains"]
+position = Vector2(1142, 462)
+texture = ExtResource("3_uhscj")
+metadata/_edit_lock_ = true
